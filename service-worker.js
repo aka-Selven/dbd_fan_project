@@ -12,6 +12,7 @@ self.addEventListener('install', (event) => {
         '/icons/icon-512.png',
         // Добавь изображения:
         '/dbd_head.jpg',
+        '/dbd_head3.png',
         '/avatar1.png',
         '/avatar2.png',
         '/avatar3.png',
