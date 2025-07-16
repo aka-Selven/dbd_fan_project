@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <link rel="manifest" href="manifest.json">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dead by Daylight — Особенности</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #0d0d0d;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: #f5f5f5;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      padding: 8px 16px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover, nav a.active {
+      background-color: #ff4444;
+    }
+
+    header {
+      background: url('dbd_head.jpg') no-repeat center center;
+      background-size: contain;
+      background-color: black;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-family: 'Anton', sans-serif;
+      font-size: 3em;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-family: 'Anton', sans-serif;
+      font-size: 2em;
+      color: #ff4444;
+      margin-top: 1.5em;
+    }
+
+    h3 {
+      font-family: 'Anton', sans-serif;
+      font-size: 1.5em;
+      color: #ff6666;
+      margin-top: 1.2em;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      margin: 15px 0;
+      display: block;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 15px rgba(255, 68, 68, 0.6);
+    }
+
+    ul, p {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 10px 15px;
+      border-left: 4px solid #ff4444;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style-type: "• ";
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="features.html" class="active">Особенности</a>
+    <a href="characters.html">Персонажи</a>
+    <a href="maps.html">Отзывы</a>
+  </nav>
+
+  <header>
+    <h1>Особенности Dead by Daylight</h1>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Для Выживших: Борьба за Побег</h2>
+
+      <h3>Ремонт Генераторов</h3>
+      <img src="generator.jpg" alt="Ремонт генератора" />
+      <ul>
+        <li>Нужно отремонтировать 5 генераторов, чтобы активировать ворота выхода.</li>
+        <li>Проверки навыков: ошибки привлекают убийцу и сбивают прогресс.</li>
+        <li>Командная работа ускоряет, но повышает риск ошибок.</li>
+      </ul>
+
+      <h3>Лечение</h3>
+      <img src="lechenie.jpg" alt="Лечение выживших" />
+      <ul>
+        <li>Можно лечить себя или других с помощью аптечек.</li>
+        <li>Процесс лечения уязвим и может прерваться.</li>
+        <li>Существуют перки, ускоряющие лечение и уменьшающие шум.</li>
+      </ul>
+
+      <h3>Погоня</h3>
+      <img src="pogonia_surv.png" alt="Погоня за выжившим" />
+      <ul>
+        <li>Используйте доски, окна и окружение для побега.</li>
+        <li>Красная подсветка и звук подсказывают, что убийца рядом.</li>
+      </ul>
+
+      <h3>Использование Перков</h3>
+      <img src="surv_perks.png" alt="Перки выживших" />
+      <ul>
+        <li>Перки дают разные преимущества: от повышения скорости до способности видеть ауру убийцы.</li>
+        <li>Открываются в "Кровавой паутине" по мере прокачки.</li>
+        <li>Выбор перков важен для стратегии команды.</li>
+      </ul>
+
+      <h3>Использование Предметов</h3>
+      <img src="predmeti.png" alt="Предметы выживших" />
+      <ul>
+        <li>Аптечки, фонарики, инструменты, ключи и аддоны — каждый предмет уникален.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Для Убийц: Охота и Жертва</h2>
+
+      <h3>Погоня</h3>
+      <img src="pogonia.jpg" alt="Погоня убийцы" />
+      <ul>
+        <li>Убийцы следуют за выжившими с помощью звуковых подсказок, способностей и окружения.</li>
+      </ul>
+
+      <h3>Подвешивание на Крюки</h3>
+      <img src="kruk.jpg" alt="Крюк и жертва" />
+      <ul>
+        <li>У выжившего три фазы на крюке: попытка побега, проверка навыков, смерть.</li>
+        <li>Другие выжившие могут спасти товарища, рискуя собой.</li>
+      </ul>
+
+      <h3>Использование Перков</h3>
+      <img src="killer_perks.png" alt="Перки убийцы" />
+      <ul>
+        <li>Дают преимущества: ускорение, видимость аур, замедление ремонта и др.</li>
+      </ul>
+
+      <h3>Охрана Генераторов</h3>
+      <ul>
+        <li>Убийцы патрулируют карту и пытаются прерывать ремонт.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Общие механики</h2>
+
+      <h3>Проверки навыков (Skill Checks)</h3>
+      <ul>
+        <li>Внезапные мини‑игры, точный тайминг важен — ошибки приводят к штрафам.</li>
+      </ul>
+
+      <h3>Аура</h3>
+      <ul>
+        <li>Некоторые перки позволяют видеть ауру других игроков и объектов.</li>
+      </ul>
+
+      <h3>Ворота</h3>
+      <img src="vorota.jpg" alt="Ворота" />
+      <ul>
+        <li>Выжившие могут открыть ворота и сбежать, если отремонтировали все генераторы.</li>
+      </ul>
+
+      <h3>Люк </h3>
+      <img src="luk.jpg" alt="Люк спасения" />
+      <ul>
+        <li>Появляется, если остаётся один выживший — убийца может закрыть его.</li>
+      </ul>
+
+      <h3>Сущность </h3>
+      <img src="suchnost.jpg" alt="Сущность (The Entity)" />
+      <ul>
+        <li>Невидимая сила, контролирующая мир DBD и требующая жертв.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>DBD Fan Project · Неофициальный сайт</p>
+  </footer>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js');
+  }
+</script>
+</body>
+</html>

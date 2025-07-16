@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <link rel="manifest" href="manifest.json">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dead by Daylight: Персонажи</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #0d0d0d;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: #f5f5f5;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      padding: 8px 16px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover, nav a.active {
+      background-color: #ff4444;
+    }
+
+    header {
+      background: url('dbd_head.jpg') no-repeat center center;
+      background-size: contain;
+      background-color: black;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-family: 'Anton', sans-serif;
+      font-size: 3em;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-family: 'Anton', sans-serif;
+      font-size: 2em;
+      color: #ff4444;
+      margin-top: 1.5em;
+    }
+    img {
+      border-radius: 10px;
+      margin: 15px 0;
+      display: block;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 15px rgba(255, 68, 68, 0.6);
+    }
+
+    p {
+      font-size: 1.1em;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 1000px;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .link-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #ff4444;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .link-button:hover {
+      background-color: #cc0000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Навигация -->
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="features.html">Особенности</a>
+    <a href="characters.html" class="active">Персонажи</a>
+    <a href="maps.html">Отзывы</a>
+  </nav>
+
+  <!-- Шапка -->
+  <header>
+    <h1>Dead by Daylight: Персонажи</h1>
+  </header>
+
+  <!-- Основной контент -->
+  <main>
+    <p><strong>В мрачном мире Dead by Daylight вас ждет встреча с множеством персонажей, каждый из которых несет свою собственную трагическую историю. От кровожадных убийц, движимых жаждой жертв, до отчаянных выживших, готовых на все ради спасения, – выберите свою сторону в вечном противостоянии тьмы и света.</strong></p>
+
+    <h2>Убийцы</h2>
+    <div class="gallery">
+      <img src="killer1.png" alt="Убийца 1">
+      <img src="killer2.png" alt="Убийца 2">
+      <img src="killer3.png" alt="Убийца 3">
+      <img src="killer4.png" alt="Убийца 4">
+      <img src="killer5.png" alt="Убийца 5">
+      <img src="killer6.png" alt="Убийца 6">
+      <img src="killer7.png" alt="Убийца 7">
+    </div>
+
+    <h2>Выжившие</h2>
+    <div class="gallery">
+      <img src="surv1.png" alt="Выживший 1">
+      <img src="surv2.png" alt="Выживший 2">
+      <img src="surv3.png" alt="Выживший 3">
+      <img src="surv4.png" alt="Выживший 4">
+      <img src="surv5.png" alt="Выживший 5">
+      <img src="surv6.png" alt="Выживший 6">
+      <img src="surv7.png" alt="Выживший 7">
+      <img src="surv8.png" alt="Выживший 8">
+    </div>
+
+    <a class="link-button" href="https://deadbydaylight.com/characters" target="_blank">Подробнее на официальном сайте</a>
+  </main>
+
+  <footer>
+    <p>DBD Fan Project · Неофициальный сайт</p>
+  </footer>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js');
+  }
+</script>
+</body>
+</html>

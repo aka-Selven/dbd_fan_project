@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="manifest" href="manifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dead by Daylight — Добро пожаловать</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #0d0d0d; 
+      /*background: url('fon.jpg');
+      background-size: cover;*/
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: #f5f5f5;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      padding: 8px 16px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover, nav a.active {
+      background-color: #ff4444;
+    }
+    img {
+      border-radius: 10px;
+      margin: 15px 0;
+      display: block;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 15px rgba(255, 68, 68, 0.6);
+    }
+
+    header {
+      background: url('dbd_head.jpg') no-repeat center center;
+      background-size: contain;
+      background-color: black;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-family: 'Anton', sans-serif;
+      font-size: 3em;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-family: 'Anton', sans-serif;
+      font-size: 2em;
+      color: #ff4444;
+      margin-top: 1.5em;
+    }
+
+    ul {
+      list-style-type: "• ";
+      padding-left: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #ff4444;
+      color: white;
+      padding: 15px 30px;
+      margin: 20px 10px 0 0;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background: #cc0000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="active">Главная</a>
+    <a href="features.html">Особенности</a>
+    <a href="characters.html">Персонажи</a>
+    <a href="maps.html">Отзывы</a>
+  </nav>
+
+  <header>
+    <h1>Добро пожаловать в мир Dead by Daylight</h1>
+  </header>
+
+  <main>
+      <p><strong>Dead by Daylight</strong> — это асимметричный хоррор, в котором один игрок становится убийцей, а четверо других — выжившими, пытающимися спастись. В напряжённой борьбе за жизнь и жертву каждая встреча — это испытание на прочность и реакцию.</p>
+
+    <img src="dbd_head3.png" alt="Скриншот игры Dead by Daylight" width="1000" height="600">
+
+    <h2>Выберите свою сторону</h2>
+    <p>Станьте коварным маньяком или хитрым выжившим. Играйте за культовых персонажей из вселенных ужасов или оригинальных героев. Изучайте карты, прокачивайтесь, открывайте перки и создавайте уникальные сборки.</p>
+
+    <h2>Сможете ли вы выжить?</h2>
+    <p>Погрузитесь в атмосферу кошмара, напряжения и стратегии. С каждой новой игрой вас ждёт новый опыт, неожиданности и эмоции. Добро пожаловать в мир, где страх — ваш постоянный спутник.</p>
+
+    <h2>Трейлер игры</h2>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-top: 20px; margin-bottom: 40px; border-radius: 10px;">
+      <iframe 
+        src="https://rutube.ru/play/embed/25c4bbc6a79223926a83f1ebf02ae141"
+        frameborder="0"
+        allow="autoplay; fullscreen"
+        allowfullscreen
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+      </iframe>
+    </div>
+    <a href="https://store.steampowered.com/app/381210/Dead_by_Daylight/" class="button">Купить игру</a>
+    <a href="https://forums.bhvr.com/dead-by-daylight/" class="button">Перейти на форум</a>
+  </main>
+
+  <footer>
+    <p>DBD Fan Project · Неофициальный сайт</p>
+  </footer>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+      .then(() => console.log('Service Worker зарегистрирован'))
+      .catch(err => console.log('SW ошибка:', err));
+  }
+</script>
+</body>
+</html>

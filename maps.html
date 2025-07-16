@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <link rel="manifest" href="manifest.json">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dead by Daylight — Отзывы</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      /*background: url('fon.jpg');
+      background-size: cover;*/
+      background-color: #0d0d0d;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: #f5f5f5;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      padding: 8px 16px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background-color: #ff4444;
+    }
+
+    header {
+      background: url('dbd_head.jpg') no-repeat center center;
+      background-size: contain;
+      background-color: black;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-family: 'Anton', sans-serif;
+      font-size: 3em;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-family: 'Anton', sans-serif;
+      font-size: 2em;
+      color: #ff4444;
+      margin-top: 1.5em;
+    }
+
+    .review {
+      background-color: #1a1a1a;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 68, 68, 0.15);
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .review img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #ff4444;
+    }
+
+    .review-content {
+      flex: 1;
+    }
+
+    .review h3 {
+      margin: 0;
+      color: #ff6666;
+      font-family: 'Anton', sans-serif;
+      font-size: 1.3em;
+    }
+
+    .review p {
+      margin-top: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .review {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .review img {
+        margin-bottom: 10px;
+      }
+
+      .review-content {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Навигация -->
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="features.html">Особенности</a>
+    <a href="characters.html">Персонажи</a>
+    <a href="map.html" class="active">Отзывы</a>
+  </nav>
+
+  <!-- Шапка -->
+  <header>
+    <h1>Отзывы игроков Dead by Daylight</h1>
+  </header>
+
+  <!-- Контент -->
+  <main>
+    <p><strong>Что говорят реальные игроки об игре?</strong> Ниже — личный опыт, эмоции и впечатления выживших и убийц в мире Dead by Daylight.</p>
+
+    <div class="review">
+      <img src="avatar1.png" alt="Аватар Елены" />
+      <div class="review-content">
+        <h3>Елена (450+ часов)</h3>
+        <p>Игра держит в напряжении каждую минуту. Люблю играть за выживших, особенно когда попадается хорошая команда сурвов. Разнообразие перков и предметов позволяет находить новые тактики!</p>
+      </div>
+    </div>
+
+    <div class="review">
+      <img src="avatar2.png" alt="Аватар Андрея" />
+      <div class="review-content">
+        <h3>Андрей (убийца‑мейн)</h3>
+        <p>Отличный PvP мультиплеер про побег от маньяка! Уникальный геймплей, отличная графика и звук, обновляемое разнообразие персонажей и навыков, отличный сетевой код, высокий порог входа. Рекомендую!</p>
+      </div>
+    </div>
+
+    <div class="review">
+      <img src="avatar3.png" alt="Аватар Кати" />
+      <div class="review-content">
+        <h3>Катя</h3>
+        <p>Очень атмосферная и напряжённая игра. Не хватает новых карт, но зато каждый персонаж по-своему интересен. Рекомендую играть с друзьями, особенно в войсе!</p>
+      </div>
+    </div>
+
+    <div class="review">
+      <img src="avatar4.png" alt="Аватар Максима" />
+      <div class="review-content">
+        <h3>Максим (новичок)</h3>
+        <p>Сначала сложно, особенно когда тебя сразу ловят. Но когда начинаешь понимать механику — затягивает. Совет: смотрите гайды и не бросайте после первых поражений!</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Подвал -->
+  <footer>
+    <p>P.S. Хотите оставить отзыв? Напишите нам через форму обратной связи!</p>
+  </footer>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js');
+  }
+</script>
+</body>
+</html>
